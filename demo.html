@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkklist pubblicistica</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <style>
+    .infobox {
+    margin: 0 0.1em;
+    padding: 0.3em 1em;
+    color: #fff;
+    background: #4d85d1;
+    }    
+    </style>
+  </head>
+  <body>
+  <p><h1>Checklist pubblicistica</h1></p>
+  <form class="pure-form">
+    <fieldset>
+        <legend>Calcolo affiliazione</legend>
+        <label for="stacked-state">Seleziona la tua tipologia di contratto di lavoro</label>
+        <select id="stacked-state">
+          <option value="sub">Subordinato (determinato, indeterminato)</option>
+          <option value="psub">Parasubordinato (borsista, co.co.co.)</option>
+          <option value="conv">Convenzionato (Dottorandi, CNR, UniPI)</option>
+        </select>
+      <!-- infobox - se sub o psub solo affiliazione standard (IRCCS Fondazione Stella Maris)-->
+      <!-- se conv allora doppia affiliazione su riga separata-->
+      <hline></hline>
+      <label for="stacked-email">Email</label>
+        <input type="email" id="stacked-email" placeholder="Email" />
+        <span class="pure-form-message">This is a required field.</span>
+        <label for="stacked-password">Password</label>
+        <input type="password" id="stacked-password" placeholder="Password" />
+        <label for="stacked-remember" class="pure-checkbox">
+            <input type="checkbox" id="stacked-remember" /> Remember me
+        </label>
+        <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+    </fieldset>
+  </form>
+  </body>
+</html>
